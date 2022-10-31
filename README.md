@@ -1,34 +1,12 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+4th way to connect our smart contracts to Metamask: Using next.js + Moralis.
 
-## Getting Started
+Following from "https://www.youtube.com/watch?v=pdsYCkUWrgQ"
 
-First, run the development server:
+A lot of aplications have some centralized components where they connect to a database in order to store some info, without requiring us to do a transaction for everything.
+For example in Open Sea, we can put a "like" in the nfts and it will pop up the wallet asking for us to sign it, but it doesn't create a transaction = it doesnt save that
+signature/ that data, in the blockchain. That actually gets stored in a centralized database, where the data is linked to our signature.
+And this type of funcionalities can make our dapps a lot more feature rich.
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+Moralis has a react package aswell that allows us to have the functionality of Web3react to deal with the provider and the connection to the wallet, but also gives us the option of having a server that runs all of our aplications if we want it.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
-
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
-
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+(add the steps of install, use etc)
