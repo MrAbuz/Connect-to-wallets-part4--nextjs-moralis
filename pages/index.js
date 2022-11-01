@@ -18,10 +18,7 @@ export default function Home() {
   //there's a bunch of other stuff we can use besides runContractFunction
   //this abi, contractAddress, functionName and params are things you always have to fill when using this useWeb3Contract?
   //now instead of creating an execute() function, we add this in the html just like we did with the connect() function
-  //even easier like this. but seems to automatic, i liked the web3react one more I think, using ethers etc. Lets see
-
-  //this is the setup Patrick highly recommends people look into and look into using because it just makes life so much easier.
-  //He has used Moralis for a number of projects its fantastic!
+  //even easier like this. this looks clean tbh to execute a call to a function
 
   const { runContractFunction } = useWeb3Contract({
     abi: abi,
@@ -31,6 +28,9 @@ export default function Home() {
       _favoriteNumber: 42,
     },
   });
+
+  //this (Moralis) is the setup Patrick highly recommends people look into and look into using because it just makes life so much easier.
+  //He has used Moralis for a number of projects its really fantastic!
 
   return (
     <div>
